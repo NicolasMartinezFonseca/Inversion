@@ -1,10 +1,16 @@
 @font-face {
-    font-family: 'Montserrat'; 
-    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
+    font-family: 'Smooch Sans', sans-serif;
+    src: url('SmoochSans-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
+}
+
+
+body #simulator {
+    background: url(../img/background1.jpg);
+    background-size: cover;
 }
 
 *{
-    margin: 0; 
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +20,7 @@
     width: 100%;
     max-width: 1300px;
     padding: 50px 60px;
-    border: 1px solid #dde0e8;
+    border: 1px solid #DDF2FD;
     margin: 100px auto;
     box-shadow: 0 0 3em #dfdfdf;
 }
@@ -22,10 +28,10 @@
 h1{
     font-size: 34px;
     font-weight: 700;
-    color: crimson;
+    color: #164863;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid #9BBEC8;
 }
 
 .cont-flex{
@@ -40,7 +46,7 @@ h1{
 }
 
 h2{
-    color: green;
+    color: #164863;
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 14px;
@@ -48,7 +54,7 @@ h2{
 
 .left p{
     margin-bottom: 30px;
-    color: black;
+    color: #427D9D;
 }
 
 .form{
@@ -79,7 +85,7 @@ h2{
 .group-data label{ 
     display: block;
     margin-bottom: 10px;
-    color: crimson;
+    color: #164863;
 }
 .group-data input,
 .group-data select{
@@ -92,28 +98,28 @@ h2{
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: crimson;
+    background: #164863;
     color: #fff;
-    border: 1px solid brown;
+    border: 1px solid #DDF2FD;
     transition: .4s;
     cursor: pointer;
 }
 
 .form button:hover{
-    background: black;
+    background: #427D9D;
     border: 1px solid #1c9882;
     color: white;
 }
 
 input, select{
     padding: 14px 30px;
-    background: grey;
+    background: #DDF2FD;
     border: 0;
     border-bottom: 2px solid #7a93ab;
     outline: none;
 }
 input::placeholder {
-    color: #000; /* Cambia este valor al color que desees */
+    color: #164863; /* Cambia este valor al color que desees */
 }
 
 .right .pre-simulation{
@@ -143,20 +149,20 @@ input::placeholder {
 }
 
 .right .post-simulation h3{
-    color: black;
+    color: #427D9D;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 40px;
 }
 
 .right .post-simulation h3 span{
-    color: green;
+    color: #164863;
     font-weight: 600;
     font-size: 24px;
 }
 
 .right .total{
-    background: grey;
+    background: #DDF2FD;
     padding: 30px;
 }
 
@@ -179,12 +185,13 @@ input::placeholder {
 
 .notificacion{
     padding: 20px;
-    border: 1px solid #1c9882;
+    border: 1px solid #164863;
     margin-top: 40px;
 }
 
 .notificacion h5{
     font-weight: 400;
+    color: #164863;
 }
 
 .notificacion h5 span{
