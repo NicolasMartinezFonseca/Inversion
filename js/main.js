@@ -4,7 +4,7 @@ function inversion(){
     const preCont = document.querySelector(".pre-simulation");
     const postCont = document.querySelector(".post-simulation");
     postCont.classList.remove("disabled");
-    preCont.classList.add("disabled");
+    preCont.classList.add("disabled"); 
 
     //2. Capturamos y mostramos los datos que no se calculan
     const campoNombres = document.getElementById("nombres").value;
@@ -22,6 +22,8 @@ function inversion(){
     const tiempo = document.getElementById("tiempo").value;
     const gananciaShow = document.getElementById("total-show");
     const gtotalShow= document.getElementById("ganancia-show");
+    const tiempoShow = document.getElementById("tiempo-show");
+    const interesShow = document.getElementById("interes-show");
 
     let ganancia = 0;
     let gananciaTotal = 0;
@@ -31,30 +33,35 @@ function inversion(){
     switch (tiempo) {
 
         case "1":
-            ganancia = (inversion * 2.4)/100 * 12;
+            ganancia = (inversion * 0.8)/100 * 12;
             gananciaTotal = parseFloat(inversion) + parseFloat(ganancia);
             gananciaShow.innerText = gananciaTotal;
             gtotalShow.innerText = ganancia;
+            tiempoShow.innerText = tiempo;
+            interesShow.innerText= "0.8%";
 
             break;
 
         case "2":
-            ganancia = (inversion * 2.9)/100 *24;
+            ganancia = (inversion * 1.3)/100 *24;
             gananciaTotal = parseFloat(inversion) + parseFloat(ganancia);
             gananciaShow.innerText = gananciaTotal;
             gtotalShow.innerText = ganancia;
+            tiempoShow.innerText = tiempo;
+            interesShow.innerText= "1.3%";
 
             break;
 
         case "3":
-            ganancia = (inversion * 3.3)/100 *36;
+            ganancia = (inversion * 1.7)/100 *36;
             gananciaTotal = parseFloat(inversion) + parseFloat(ganancia);
             gananciaShow.innerText = gananciaTotal;
             gtotalShow.innerText = ganancia;
+            tiempoShow.innerText = tiempo;
+            interesShow.innerText= "1.7%";
 
     }
     
     
 
 }
-
